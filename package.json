@@ -1,0 +1,53 @@
+{
+  "name": "ecma6_test",
+  "version": "1.0.0",
+  "description": "Learn es6",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "babelify": "^7.3.0",
+    "babylon": "^6.17.4",
+    "eslint": "^4.1.1",
+    "eslint-scope": "^3.7.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "babelify": "^7.3.0",
+    "mocha": "^3.4.2"
+  },
+  "scripts": {
+    "script-name": "babel-node script.js",
+    "lint": "eslint my-files.js",
+    "test": "mocha --ui qunit --compilers js:babel-core/register",
+    "babelBuild": "babel babelSrc/ -d babelLib/"
+  },
+  "browserify": {
+    "transform": [["babelify", { "presets": ["latest"] }]]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daner1990/ecma6_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daner1990/ecma6_test/issues"
+  },
+  "homepage": "https://github.com/Daner1990/ecma6_test#readme"
+}
